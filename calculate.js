@@ -63,6 +63,13 @@ const pentagon = document.getElementById('pentagon').addEventListener('click',fu
     const pentagonp = document.getElementById('pen-p').value;
     const pentagonb = document.getElementById('pen-b').value;
     const pentagonArea= 0.5*pentagonp*pentagonb;
+    const pentagonarea = 'Pentagon :'+ pentagonArea +'cm2';
+
+    var node = document.createElement('li');
+node.appendChild(document.createTextNode(pentagonarea));
+ 
+document.querySelector('ol').appendChild(node);
+ 
    
 })
 
@@ -70,4 +77,12 @@ const ellipse = document.getElementById('ellipse').addEventListener('click',func
     const ellipseA = document.getElementById('ab').value;
     const ellipseB = document.getElementById('ba').value;
     const ellipseArea= 3.14*ellipseA*ellipseB;
+    const ellipsearea = 'Ellips :'+ellipseArea + 'cm2';
+
+    var node = document.createElement('li');
+    node.appendChild(document.createTextNode(ellipsearea));
+     
+    document.querySelector('ol').appendChild(node);
+     
+ 
 })

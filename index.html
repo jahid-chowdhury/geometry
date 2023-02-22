@@ -17,7 +17,7 @@
     </header>
     <main>
         <section class=" mt-10 mx-12 grid grid-cols-4 gap-4 ">
-            <div class= "w-full max-w-sm  border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div class= "w-full max-w-sm  border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:bg-red-200">
              <img class ="m-6 imge"  src="images/triangle.png">
              <h1 class="pl-6 py-3.5 ml-9"><span class="text-2xl font-bold">Triangle </span><br><span class="font-semibold">Area (A) = 0.5 *b  *h </span></h1>
              <input id="b" class="w-12 bg-slate-200 text-lg inline-flex ml-9" type="text" placeholder="b">cm
@@ -25,7 +25,7 @@
              <button id="triangle-calculate" class="w-3/4 bg-cyan-600 m-7 rounded p-3 text-white">Calculate</button>
             </div>
 
-            <div class= "w-full max-w-sm  border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div class= "w-full max-w-sm  border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:bg-cyan-200">
                 <img class ="m-6 imge"  src="images/rectangle.png">
                 <h1 class="pl-6 py-3.5 ml-9"><span class="text-2xl font-bold">Rectangle </span><br><span class="font-semibold">Area (A) =  W * L </span></h1>
                 <input id="w" class="w-12 bg-slate-200 text-lg inline-flex ml-9" type="text" placeholder="w">cm
@@ -33,12 +33,12 @@
                 <button id="rectangle-calculate" class="w-3/4 bg-cyan-600 m-8 rounded p-3 text-white">Calculate</button>
                </div>
 
-               <div class= "w-full max-w-sm  border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+               <div class= "w-full max-w-sm  border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:bg-green-200">
                 <img class ="m-6 imge "  src="images/parallelogram.png">
                 <h1  class="pl-6 py-3.5 ml-9"><span class="text-2xl font-bold">Parallelogram </span><br><span class="font-semibold">Area (A) = b * h </span></h1>
                 <input id="pera-b" class="w-12 bg-slate-200 text-lg inline-flex ml-9" type="text" placeholder="b">cm
-                <input id = "pera h" class="w-12 bg-slate-200 text-lg text-black inline-flex" type="text" placeholder="h">cm
-                <button id="parallelogram-calculation" class="w-3/4 bg-cyan-600 m-8 rounded p-3 text-white">Calculate</button>
+                <input id = "pera-h" class="w-12 bg-slate-200 text-lg text-black inline-flex" type="text" placeholder="h">cm
+                <button id="parallelogram-cal" class="w-3/4 bg-cyan-600 m-8 rounded p-3 text-white">Calculate</button>
                </div>
 
                <div class= "w-full max-w-sm  border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -51,7 +51,7 @@
                   
         </section>
         <section class=" mt-10 mx-12 grid grid-cols-4 gap-4 ">
-            <div class= "w-full max-w-sm  border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div class= "w-full max-w-sm  border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:bg-lime-200">
              <img class ="m-6 imge"  src="images/rhombus.png">
              <h1 class="pl-6 py-3.5 ml-9"><span class="text-2xl font-bold">Rhombus </span><br><span class="font-semibold">Area (A) = d1 * d2 * 0.5 </span></h1>
              <input id="d1" class="w-12 bg-slate-200 text-lg inline-flex ml-9" type="text" placeholder="d1">cm
@@ -59,7 +59,7 @@
              <button id="rhombus" class="w-3/4 bg-cyan-600 m-7 rounded p-3 text-white">Calculate</button>
             </div>
 
-            <div class= "w-full max-w-sm  border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div class= "w-full max-w-sm  border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:bg-amber-200">
                 <img class ="m-6 imge"  src="images/pentagon.png">
                 <h1 class="pl-6 py-3.5 ml-9"><span class="text-2xl font-bold">pentagon</span><br><span class="font-semibold">Area (A) = 0.5 * p * b </span></h1>
                 <input id="pen-p" class="w-12 bg-slate-200 text-lg inline-flex ml-9" type="text" placeholder="p">cm
@@ -67,16 +67,13 @@
                 <button id="pentagon" class="w-3/4 bg-cyan-600 m-8 rounded p-3 text-white">Calculate</button>
                </div>
 
-               <div class= "w-full max-w-sm  border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+               <div class= "w-full max-w-sm  border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:bg-orange-200">
                 <img class ="m-6 imge "  src="images/ellipse.png">
                 <h1 class="pl-6 py-3.5 ml-9"><span class="text-2xl font-bold">Ellipse </span><br><span class="font-semibold">Area (A) = ab </span></h1>
                 <input id="ab" class="w-12 bg-slate-200 text-lg inline-flex ml-9" type="text" placeholder="a">cm
                 <input id="ba" class="w-12 bg-slate-200 text-lg text-black inline-flex" type="text" placeholder="b">cm
                 <button id="ellipse" class="w-3/4 bg-cyan-600 m-8 rounded p-3 text-white">Calculate</button>
                </div>
-
-               <div class= "w-full max-w-sm  border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                 </div>
                
                   </section>
     </main>

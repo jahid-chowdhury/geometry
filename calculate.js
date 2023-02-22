@@ -29,7 +29,7 @@ document.querySelector('ol').appendChild(node);
  
    
 })
-     const parallelogram = document.getElementById('parallelogram-calculation').addEventListener('click',function(){
+     const parallelogram = document.getElementById('parallelogram-cal').addEventListener('click',function(){
     const perawide = document.getElementById('pera-b').value;
     const peralanth = document.getElementById('pera-h').value;
     const parallelogramarea = perawide*peralanth;

@@ -6,19 +6,41 @@ const tribuj = document.getElementById('triangle-calculate').addEventListener('c
     const heighte = document.getElementById('h').value;
     const land = document.getElementById('b').value;
     const trianglecalculation = 0.5* heighte*land;
-    const trianglearea = 'Tringle:'+trianglecalculation;
+    const trianglearea = 'Tringle :'+trianglecalculation +'cm2';
+
+    var node = document.createElement('li');
+node.appendChild(document.createTextNode(trianglearea));
+ 
+document.querySelector('ol').appendChild(node);
+ 
 
 })
 const rectangle = document.getElementById('rectangle-calculate').addEventListener('click',function(){
     const wide = document.getElementById('w').value;
     const lanth = document.getElementById('l').value;
     const rectanglearea = wide*lanth;
+
+    const rectangleArea = 'Rectangle :'+rectanglearea +'cm2';
+
+    var node = document.createElement('li');
+node.appendChild(document.createTextNode(rectangleArea));
+ 
+document.querySelector('ol').appendChild(node);
+ 
    
 })
      const parallelogram = document.getElementById('parallelogram-calculation').addEventListener('click',function(){
     const perawide = document.getElementById('pera-b').value;
     const peralanth = document.getElementById('pera-h').value;
     const parallelogramarea = perawide*peralanth;
+    const parallelogramArea = 'Parallelogram :'+ parallelogramarea+'cm2';
+
+
+    var node = document.createElement('li');
+node.appendChild(document.createTextNode(parallelogramArea));
+ 
+document.querySelector('ol').appendChild(node);
+ 
    
 })
 
@@ -27,6 +49,13 @@ const rhombus = document.getElementById('rhombus').addEventListener('click',func
     const rhombuswide = document.getElementById('d1').value;
     const rhombuslanth = document.getElementById('d2').value;
     const rhombusarea = 0.5*rhombuslanth*rhombuswide;
+    const rhombustotal = 'Rhombus :'+rhombusarea +'cm2';
+
+    var node = document.createElement('li');
+node.appendChild(document.createTextNode(rhombustotal));
+ 
+document.querySelector('ol').appendChild(node);
+ 
    
 })
 
